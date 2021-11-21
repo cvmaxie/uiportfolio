@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" href="data:;base64,=">
+    <link rel="stylesheet" href="homestyle.css">
+
+</head>
+
+<body>
+    <div id="container">
+        <div id="topbar">
+            <h1>Max Seavey</h1>
+            <div id="links"><a href="">Portfolio</a><a href="">About</a></div>
+        </div>
+
+        <div id="gridContainer"></div>
+    </div>
+</body>
+<script>
+    let titles = ['The Garbage Incident', 'Surveillance', 'Robin Hood', 'Pixel Perfect', 'HOUSE'];
+    let descs = [];
+    let thumbnailImgs = ['images/garbageincident.png', 'images/surveillance.jpg', 'images/surveillance.jpg', 'images/pixelperfectimg.jpg', 'images/surveillance.jpg'];
+
+    descs[0] = 'The Garbage Incident was created in Twine, a Javascript-driven framework for choice-based narrative games. It was a 4-week group project, for which I contributed UI design and visuals. I’m most proud of the color workflow; all of the assets were created in grayscale, and a color overlay was added to both the text and icons, so that color matching would be instantaneous and not hard-coded in the image.';
+
+    descs[1] = 'A UI prototype created with C# in Unity engine. Inspired by the AT&T Long lines building, this interface imagines a game in which the player is an NSA agent screening call transcripts. UI is inspired by the No. 4 Electronic Switching System.';
+
+    descs[2] = 'A quest log prototype created with HTML and javascript; we were provided with assets for this game design class assignment, and I wanted to test out a UI prototyping workflow, limiting myself to the provided assets and capabilities of HTML and CSS. It imagines the quest log of an international-spy themed game adaptation of Robin Hood.';
+
+    descs[3] = 'This is a pixel-art drawing program I prototyped in p5, a javascript framework for interactive visual experiences. I wanted to create a touch-friendly, browser-based sprite drawing application that can be used on iPad.';
+
+    descs[4] = 'HOUSE is a project inspired by the indie game HOUSE. I worked on the visuals and UI design; I’m particularly proud of the backpack, which was coded collaboratively with my teammates.';
+
+    let gridContain = document.getElementById('gridContainer');
+
+    function projectListing(title, desc, thumbnailUrl) {
+        gridContain.innerHTML += `<div><img src="${thumbnailUrl}"><span><h2>${title}</h2><p>${desc}</p></span></div>`;
+    }
+
+    for (let i = 0; i < titles.length; i++) {
+        projectListing(titles[i], descs[i], thumbnailImgs[i]);
+    }
+
+</script>
+
+</html>

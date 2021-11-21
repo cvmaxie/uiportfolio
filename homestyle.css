@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville&family=Noto+Serif:wght@400;700&display=swap');
+
+body {
+    margin: 0;
+    background-color: #1a1d21;
+}
+
+h1,
+h2,
+h3,
+a {
+    font-family: 'Noto Serif', serif;
+    color: #C9C49C;
+}
+
+h2{
+    font-size: 2em;
+    margin-bottom: 0;
+}
+
+p {
+    font-family: 'Libre Baskerville', serif;
+    color: #C9C49C;
+}
+
+img {
+    width: 720px;
+}
+
+#container {
+    margin: auto;
+    width: 80%;
+}
+
+#topbar {
+    display: flex;
+}
+
+#links a {
+    margin: 1em;
+    padding: 1em;
+    text-decoration: none;
+}
+
+#links {
+    display: flex;
+    margin: 0 0 auto auto;
+    width: max-content;
+}
+
+#gridContainer {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 1em;
+}
+
+#gridContainer div {
+    display: flex;
+    padding: 1em;
+    /*outline: 1px solid black;*/
+}
+
+#gridContainer span {
+    margin: 0 auto auto 1em;
+}
+
+#gridContainer h2 {
+    margin-top: 0;
+}
+
+.hidden {
+    display: none;
+}
