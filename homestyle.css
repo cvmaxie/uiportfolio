@@ -1,26 +1,49 @@
 @import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville&family=Noto+Serif:wght@400;700&display=swap');
 
+html {
+    font-size: 100%;
+}
+
 body {
     margin: 0;
-    background-color: #1a1d21;
+    background-color: #1d1d1d;
+    font-family: 'Noto Serif', serif;
 }
 
 h1,
 h2,
-h3,
-a {
-    font-family: 'Noto Serif', serif;
+h3 {
     color: #C9C49C;
 }
 
-h2{
-    font-size: 2em;
+h2 {
+    font-size: 2rem;
     margin-bottom: 0;
 }
 
 p {
     font-family: 'Libre Baskerville', serif;
     color: #C9C49C;
+    font-size: 1.2rem;
+}
+
+a {
+    text-decoration: none;
+    color: #C9C49C;
+    transition: all .2s;
+}
+
+.button:link, .button:visited {
+    font-size: 1.5rem;
+    margin: .75rem .5rem .75rem 0;
+    padding: .3rem .75rem .3rem .75rem;
+    border-radius: 2px;
+    background-color: #C9C49C;
+    color: #2e2e2e;
+}
+
+.button:hover, .button:active {
+    background-color: #ecebe5;
 }
 
 img {
@@ -29,7 +52,7 @@ img {
 
 #container {
     margin: auto;
-    width: 80%;
+    width: 70%;
 }
 
 #topbar {
@@ -37,9 +60,13 @@ img {
 }
 
 #links a {
-    margin: 1em;
-    padding: 1em;
-    text-decoration: none;
+    margin: 1rem;
+    padding: 1rem;
+
+}
+
+#links a:hover, links a:active {
+    background-color: #2b2b2b;
 }
 
 #links {
@@ -51,22 +78,29 @@ img {
 #gridContainer {
     display: grid;
     grid-template-columns: 1fr;
-    grid-gap: 1em;
+    grid-gap: 1rem;
 }
 
 #gridContainer div {
     display: flex;
-    padding: 1em;
-    /*outline: 1px solid black;*/
+    padding: 1rem;
+    align-items: center;
 }
 
 #gridContainer span {
-    margin: 0 auto auto 1em;
+    margin: 0 auto auto 1rem;
 }
 
 #gridContainer h2 {
     margin-top: 0;
 }
+
+#gameContain {
+    margin: auto;
+    display: block;
+    width: min-content;
+}
+
 
 .hidden {
     display: none;

@@ -1,0 +1,219 @@
+  @import url('https://fonts.googleapis.com/css2?family=Cairo:wght@300&family=Sawarabi+Mincho&display=swap');
+  body {
+      margin: 0;
+      background-color: rgb(49, 49, 49);
+  }
+  /*text*/
+  
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  p {
+      font-family: 'Cairo', sans-serif;
+      letter-spacing: .1rem;
+  }
+  
+  #questDesc {
+      color: #ffffff;
+  }
+  
+  #selected>div>h3 {
+      color: #ffffff;
+  }
+  
+  #selected>div>h4 {
+      color: #ffb553;
+  }
+  
+  h1 {
+      text-align: center;
+      color: #ffffff;
+      padding: 0;
+      margin: .5em;
+  }
+  
+  h2 {
+      margin: 0;
+      border-bottom: 2px solid #8888886e;
+      color: #ffffff;
+  }
+  
+  h3 {
+      margin: 0;
+      font-size: 13pt;
+      line-height: 1.1;
+      padding: 0;
+      color: #808080;
+  }
+  
+  h4 {
+      margin: .5em;
+      margin-left: 0;
+      font-size: 10pt;
+      line-height: .5;
+      padding: 0;
+      color: #ffb453a4;
+  }
+  
+  h5 {
+      margin: 0;
+      font-size: 9pt;
+      text-align: center;
+      line-height: 1.1;
+      padding: 0;
+      color: #808080;
+  }
+  /*page elements*/
+  
+  #gameScreen {
+      width: 1280px;
+      height: 720px;
+      margin: auto;
+      margin-top: 2em;
+      background-image: url("assets/textures/Night_lights_2K.png");
+      background-position-y: center;
+      background-size: 220%;
+  }
+  
+  #overlay {
+      width: 100%;
+      height: 100%;
+      background-color: #00000007;
+      -webkit-backdrop-filter: blur(6px);
+      backdrop-filter: blur(6px);
+  }
+  
+  #container {
+      width: 100%;
+      height: 100%;
+      padding-top: .5em;
+  }
+  
+  #activeArea {
+      width: 86%;
+      height: 70%;
+      display: grid;
+      padding: 1em;
+      padding-left: 0;
+      grid-template-columns: 40% 65%;
+      border: 4px double #ffbb3c33;
+      border-left: none;
+      border-radius: 0 2px 2px 0;
+      background-color: #00000038;
+      filter: drop-shadow(0 0 1em #000000);
+  }
+  
+  #questContainer {
+      display: block;
+      height: 100%;
+      overflow: hidden;
+  }
+  
+  #quests {
+      display: block;
+      height: 75%;
+      overflow-y: scroll;
+      padding: .5em;
+  }
+  
+  #questDetails {
+      margin: auto;
+      box-sizing: border-box;
+      padding: 2em;
+      height: 85%;
+      width: 80%;
+      border: 4px double rgba(255, 187, 60, 0.4);
+      box-shadow: 0px 0px 8px #ffbd6780;
+  }
+  
+  #filterMenu {
+      margin: auto;
+      margin-bottom: .5em;
+      display: flex;
+      width: 85%;
+      align-items: center;
+      border-bottom: 1px solid #ffbb3c33;
+      padding: .5em;
+  }
+  
+  .questListing {
+      display: flex;
+      align-items: center;
+      margin: .8em;
+      height: 70px;
+      padding: 0 .25em;
+      background-color: #ffffff0a;
+      background-blend-mode: color-dodge;
+  }
+  
+  .questListing:hover {
+      background-color: #ffffff17;
+  }
+  /*selected quest listing*/
+  
+  #selected {
+      box-sizing: border-box;
+      border: 1px solid #ffffff8a;
+      background-color: #ffffff23;
+      background-blend-mode: color-dodge;
+      box-shadow: 0px 0px 8px #ffffff80;
+  }
+  /*filter icons*/
+  
+  .filter {
+      border-bottom: 2px solid #ffffff00;
+      transition: all .2s;
+  }
+  
+  .filter:hover {
+      border-bottom: 1px solid #ffffff;
+  }
+  
+  .filter:active,
+  .selectedIcon {
+      border-bottom: 2px solid #ffffff;
+  }
+  /*icons*/
+  
+  .icon {
+      width: 40px;
+      height: 40px;
+      display: block;
+      padding: .45em;
+      opacity: 0.5;
+  }
+  
+  .selectedIcon,
+  #selected>.icon,
+  .filter:hover {
+      opacity: 1;
+  }
+  
+  .iconContain {
+      display: block;
+      margin: auto;
+  }
+  /*scrollbar*/
+  
+   ::-webkit-scrollbar {
+      width: 10px;
+  }
+  
+   ::-webkit-scrollbar-track {
+      background: #ffffff00;
+  }
+  
+   ::-webkit-scrollbar-thumb {
+      background: #8888886e;
+      border-radius: 2px;
+  }
+  
+   ::-webkit-scrollbar-thumb:hover {
+      background: #888888a2;
+  }
+  
+  .hidden {
+      display: none;
+  }

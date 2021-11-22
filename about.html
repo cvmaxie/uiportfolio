@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" href="data:;base64,=">
+    <link rel="stylesheet" href="homestyle.css">
+    <style>
+        #aboutContain {
+            display: flex;
+
+        }
+
+        #aboutContain>img {
+            width: 40%;
+        }
+
+        #aboutSection {
+            padding: 10px;
+            width: 60%;
+            height: 100%;
+        }
+
+        #socials {
+            width: fit-content;
+            height: fit-content;
+            position: relative;
+            bottom: 0;
+            right: 0;
+        }
+
+        .emphasis {
+            color: #ecebe5;
+            font-weight: bold;
+        }
+
+        .socialLink:link,
+        .socialLink:visited {
+            background-color: #2b2b2b;
+            color: #C9C49C;
+        }
+
+        .socialLink:hover,
+        .socialLink:active {
+            background-color: #414141;
+            color: #C9C49C;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="container">
+        <div id="topbar">
+            <a href="index.html">
+                <h1>Max Seavey</h1>
+            </a>
+            <div id="links"><a href="index.html">Portfolio</a><a href="about.html">About</a></div>
+        </div>
+        <div id="aboutContain" style="height:min-content;">
+            <img src="images/pocky.jpg">
+            <div id="aboutSection">
+                <h1>About</h1>
+                <p>
+                    Hello! I'm Max, a third year student at <span class="emphasis">New York University</span>, where I'm
+                    majoring in <span class="emphasis">Game Design</span>
+                    and minoring in <span class="emphasis">Web Applications</span>
+                    and <span class="emphasis">Computer Science</span>. I'm interested in designing the aesthetics of
+                    user interfaces for
+                    games and other interactive digital media.
+                </p>
+                <p>Long before learning to code, I spent my creative efforts on illustration and writing. I believe that
+                    years of experience
+                    in visual art and storytelling served as my foundation for the artistic principles that inform my UI
+                    decisions. I'm
+                    hoping to explore UI in a professional context by producing functional UI prototypes and
+                    implementations.</p>
+                <p>Contact: ms12047@nyu.edu</p>
+                <div id="socials">
+                    <a class="button socialLink" target="_blank"
+                        href="https://www.linkedin.com/in/max-seavey-91b700183/">Linkedin</a>
+                    <a class="button socialLink" target="_blank" href="https://github.com/cvmaxie">GitHub</a>
+                    <a class="button socialLink" target="_blank" href="https://crowswalk.itch.io/">itch.io</a>
+                    <a class="button socialLink" target="_blank"
+                        href="https://docs.google.com/document/d/1yQgMI7Su695npyBfd-lqdkixZBiCFbiFO02VBg6mPfg/edit?usp=sharing">Resume</a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</body>
+
+</html>

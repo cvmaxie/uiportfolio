@@ -10,36 +10,39 @@
 <body>
     <div id="container">
         <div id="topbar">
-            <h1>Max Seavey</h1>
-            <div id="links"><a href="">Portfolio</a><a href="">About</a></div>
+            <a href="index.html">
+                <h1>Max Seavey</h1>
+            </a>
+            <div id="links"><a href="index.html">Portfolio</a><a href="about.html">About</a></div>
         </div>
 
         <div id="gridContainer"></div>
     </div>
 </body>
 <script>
-    let titles = ['The Garbage Incident', 'Surveillance', 'Robin Hood', 'Pixel Perfect', 'HOUSE'];
+    let titles = ['The Garbage Incident', 'Surveillance', 'Robin', 'Pixel Perfect', 'HOUSE'];
     let descs = [];
-    let thumbnailImgs = ['images/garbageincident.png', 'images/surveillance.jpg', 'images/surveillance.jpg', 'images/pixelperfectimg.jpg', 'images/surveillance.jpg'];
+    let thumbnailImgs = ['images/garbageincident.png', 'images/surveillance.jpg', 'images/robinhood.jpg', 'images/pixelperfectimg.jpg', 'images/house.png'];
+    let previews = ['thegarbageincident.html', '', 'robinhood/index.html', '', '', ''];
 
-    descs[0] = 'The Garbage Incident was created in Twine, a Javascript-driven framework for choice-based narrative games. It was a 4-week group project, for which I contributed UI design and visuals. I’m most proud of the color workflow; all of the assets were created in grayscale, and a color overlay was added to both the text and icons, so that color matching would be instantaneous and not hard-coded in the image.';
+    descs[0] = '3-week prototype created in Twine, a Javascript framework for choice-based narrative games. Working in a group, I contributed the game\'s code, UI, and visual design</p><p>To streamline color-matching within time constraints, each character sprite and text entry was created in grayscale, and paired appropriately with a CSS color filter applied to selectors.';
 
-    descs[1] = 'A UI prototype created with C# in Unity engine. Inspired by the AT&T Long lines building, this interface imagines a game in which the player is an NSA agent screening call transcripts. UI is inspired by the No. 4 Electronic Switching System.';
+    descs[1] = '1-week UI prototype that imagines a game in which the player is an NSA agent screening call transcripts. Inspiration was drawn from a PC system BIOS and the <a target="_blank" style="text-decoration: underline;" href="https://en.wikipedia.org/wiki/No._4_Electronic_Switching_System">4ESS</a> interface.';
 
-    descs[2] = 'A quest log prototype created with HTML and javascript; we were provided with assets for this game design class assignment, and I wanted to test out a UI prototyping workflow, limiting myself to the provided assets and capabilities of HTML and CSS. It imagines the quest log of an international-spy themed game adaptation of Robin Hood.';
+    descs[2] = '1-week UI prototype that imagines the quest log of an international-spy themed game adaptation of Robin Hood. I constrained myself to three open-source/public domain assets provided for a class assignment: a world map texture, a set of 9 roadmap icons, and a .txt file of Robin Hood by J. Walker McSpadden (which I adapted with my own writing).';
 
-    descs[3] = 'This is a pixel-art drawing program I prototyped in p5, a javascript framework for interactive visual experiences. I wanted to create a touch-friendly, browser-based sprite drawing application that can be used on iPad.';
+    descs[3] = 'A pixel-art drawing program prototyped in <a target="_blank" style="text-decoration: underline;" href="https://p5js.org/">p5</a>, a Javascript framework for interactive visual experiences.';
 
     descs[4] = 'HOUSE is a project inspired by the indie game HOUSE. I worked on the visuals and UI design; I’m particularly proud of the backpack, which was coded collaboratively with my teammates.';
 
     let gridContain = document.getElementById('gridContainer');
 
-    function projectListing(title, desc, thumbnailUrl) {
-        gridContain.innerHTML += `<div><img src="${thumbnailUrl}"><span><h2>${title}</h2><p>${desc}</p></span></div>`;
+    function projectListing(title, desc, thumbnailUrl, previewLink) {
+        gridContain.innerHTML += `<div><img src="${thumbnailUrl}"><span><h2>${title}</h2><p>${desc}</p><a class="button"href="${previewLink}">Play</a></span></div>`;
     }
 
     for (let i = 0; i < titles.length; i++) {
-        projectListing(titles[i], descs[i], thumbnailImgs[i]);
+        projectListing(titles[i], descs[i], thumbnailImgs[i], previews[i]);
     }
 
 </script>
