@@ -48,6 +48,11 @@ a {
 
 img {
     width: 720px;
+    border-radius: 3px;
+}
+
+.sketch {
+    width: 50%;
 }
 
 #container {
@@ -78,7 +83,7 @@ img {
 #gridContainer {
     display: grid;
     grid-template-columns: 1fr;
-    grid-gap: 1rem;
+    grid-gap: 1.5rem;
 }
 
 #gridContainer div {
