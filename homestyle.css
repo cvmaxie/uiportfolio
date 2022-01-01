@@ -6,6 +6,7 @@ html {
 
 body {
     margin: 0;
+    margin-bottom: 50px;
     background-color: #1d1d1d;
     font-family: 'Noto Serif', serif;
 }
@@ -28,9 +29,12 @@ p {
 }
 
 a {
-    text-decoration: none;
     color: #C9C49C;
     transition: all .2s;
+}
+
+#topbar>a, #links>a {
+    text-decoration: none;
 }
 
 .button:link, .button:visited {
@@ -40,6 +44,7 @@ a {
     border-radius: 2px;
     background-color: #C9C49C;
     color: #2e2e2e;
+    text-decoration: none;
 }
 
 .button:hover, .button:active {
@@ -52,7 +57,7 @@ img {
 }
 
 .homeImg {
-    width: 720px;
+    margin-bottom: 1.2rem;
 }
 
 .sketch {
@@ -67,11 +72,11 @@ img {
 
 #container {
     margin: auto;
-    width: 70%;
 }
 
 #topbar {
     display: flex;
+    padding: 0 1em;
 }
 
 #links a {
@@ -100,6 +105,7 @@ img {
     display: flex;
     padding: 1rem;
     align-items: center;
+    flex-direction: column;
 }
 
 #gridContainer span {
@@ -116,7 +122,37 @@ img {
     width: min-content;
 }
 
-
 .hidden {
     display: none;
+}
+
+@media only screen and (min-width: 1100px) {
+    #gridContainer div {
+        flex-direction: row;
+    }
+
+    .homeImg {
+        width: 500px;
+    }
+}
+
+@media only screen and (min-width: 1300px) {
+    .homeImg {
+        width: 580px;
+    }
+
+    #container {
+        width: 80%;
+    }
+}
+
+@media only screen and (min-width: 1800px) {
+    .homeImg {
+        width: 680px;
+    }
+
+    #container {
+        width: 70%;
+    }
+
 }
