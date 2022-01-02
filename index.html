@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <link rel="icon" href="data:;base64,=">
-    <link rel="stylesheet" href="homestyle.css">
+    <link rel="stylesheet" href="styles/homestyle.css">
 
 </head>
 
@@ -28,19 +28,17 @@
 
     let itchWidgets = ['<iframe src="https://itch.io/embed/857028?bg_color=161616&amp;fg_color=ababab&amp;link_color=e8e8e8&amp;border_color=636363" width="552" height="167" frameborder="0"><a href="https://crowswalk.itch.io/the-garbage-incident">The Garbage Incident by crowswalk</a></iframe>', '1', '2', '3', '<iframe src="https://itch.io/embed/1318650?border_width=0&amp;bg_color=ffffff&amp;fg_color=000000&amp;link_color=d92850&amp;border_color=5a4574" width="550" height="165" frameborder="0"><a href="https://remxiia.itch.io/the-penne-dreadful-murder">The Penne Dreadful Murder by RemXiia, crowswalk</a></iframe>', '<iframe src="https://itch.io/embed/1026208?bg_color=000000&amp;fg_color=ffffff&amp;link_color=e2c16f&amp;border_color=3b526d" width="552" height="167" frameborder="0"><a href="https://david-liao.itch.io/house-final">House: The Fan Game by David Liao, Rem\'s Games, TalkingChicken, crowswalk</a></iframe>']
 
-    descs[0] = `3-week prototype created in <a href="http://twinery.org/" target="_blank">Twine</a>, a Javascript framework for choice-based narrative games. Working in a group, I contributed project management, code, UI, and art assets.</p>${itchWidgets[0]}</p><p>${seeMore(4)}`;
+    descs[0] = `3-week prototype created in <a href="http://twinery.org/" target="_blank">Twine</a>, a Javascript framework for choice-based narrative games. Working in a group, I contributed project management, code, UI, and art assets.</p>${itchWidgets[0]}</p><p>${seeMore(0)}`;
 
-    descs[1] = `1-week UI prototype that imagines the quest log of a modern detective game adaptation of Robin Hood by J. Walker McSpadden.</p><p>I constrained myself to three open-source/public domain assets provided for a class assignment: a world map texture, a set of 9 roadmap icons, and a .txt file of the book, which I adapted to suit the project.</p><p><p>${seeMore(4)}`;
+    descs[1] = `1-week UI prototype in HTML/CSS/JS that imagines the quest log of a modern detective game adaptation of Robin Hood by J. Walker McSpadden.</p><p>${seeMore(1)}`;
 
-    descs[2] = `1-week UI prototype that imagines a game in which the player is an NSA agent screening call transcripts. Inspiration was drawn from <a target="_blank" href="https://theintercept.com/2016/11/16/the-nsas-spy-hub-in-new-york-hidden-in-plain-sight/">leaked NSA documents</a> and the <a target="_blank" href="https://en.wikipedia.org/wiki/No._4_Electronic_Switching_System">4ESS</a> interface.</p><p>${seeMore(4)}`;
+    descs[2] = `1-week UI prototype that imagines a game in which the player is an NSA agent screening call transcripts. Inspiration was drawn from <a target="_blank" href="https://theintercept.com/2016/11/16/the-nsas-spy-hub-in-new-york-hidden-in-plain-sight/">leaked NSA documents</a> and the <a target="_blank" href="https://en.wikipedia.org/wiki/No._4_Electronic_Switching_System">4ESS</a> interface.</p><p>${seeMore(2)}`;
 
-    descs[3] = `A pixel-art drawing program prototyped in <a target="_blank" href="https://p5js.org/">p5</a>, a Javascript framework for interactive visual experiences.</p><p>The minimal color palette and interface is inspired by <a target="_blank" href="https://en.wikipedia.org/wiki/Flipnote_Studio">Flipnote Hatena</a>. My intention is to design a user experience of workflow using an Apple Pencil on iPad.</p><p>${seeMore(4)}<a class="button" href="https://github.com/cvmaxie/pixelPerfect">Repo</a>`;
+    descs[3] = `A pixel art drawing program prototyped in <a target="_blank" href="https://p5js.org/">p5</a>, a Javascript framework for interactive visual experiences.</p><p>${seeMore(3)}`;
 
     descs[4] = `4-week proof-of-concept of a point-and-click murder mystery game. Working in a group, I contributed project management, level design, and UI design, including asset illustration and text-box object scripting in C#.</p>${itchWidgets[4]}<p>${seeMore(4)}`;
 
     descs[5] = `4-week minigame project created in Unity with C#. This project is a fan game of <a target="_blank" href="https://barkbarkgames.itch.io/house">House by barkbarkgames</a>.</p><p>Working in a group, I contributed project management, all visual assets, and assisted the programmers with UI implementation.</p>${itchWidgets[5]}`;
-
-    //<a class="button"href="${previewLink}">Play</a>
 
     let gridContain = document.getElementById('gridContainer');
 

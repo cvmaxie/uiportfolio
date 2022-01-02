@@ -17,6 +17,11 @@ h3 {
     color: #C9C49C;
 }
 
+h1 {
+    font-size: 2.75rem;
+    margin: 1rem;
+}
+
 h2 {
     font-size: 2rem;
     margin-bottom: 0;
@@ -31,6 +36,11 @@ p {
 a {
     color: #C9C49C;
     transition: all .2s;
+}
+
+iframe {
+    border-radius: 4px;
+    margin: auto;
 }
 
 #topbar>a, #links>a {
@@ -60,23 +70,13 @@ img {
     margin-bottom: 1.2rem;
 }
 
-.sketch {
-    width: 50%;
-}
-
-.sketchbox {
-    display: grid;
-    grid-gap: 1em;
-    grid-template-columns: 1fr 1fr;
-}
-
 #container {
     margin: auto;
 }
 
 #topbar {
     display: flex;
-    padding: 0 1em;
+    padding: 0;
 }
 
 #links a {
@@ -114,12 +114,6 @@ img {
 
 #gridContainer h2 {
     margin-top: 0;
-}
-
-#gameContain {
-    margin: auto;
-    display: block;
-    width: min-content;
 }
 
 .hidden {
