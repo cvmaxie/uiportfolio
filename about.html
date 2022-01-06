@@ -7,17 +7,17 @@
     <style>
         #aboutContain {
             display: flex;
-
+            flex-direction: column;
         }
 
         #aboutContain>img {
-            width: 40%;
+            width: 90%;
+            object-fit: contain;
+            margin: auto;
         }
 
         #aboutSection {
-            padding: 25px;
-            width: 60%;
-            height: 100%;
+            padding: 25px;   
         }
 
         #socials {
@@ -28,11 +28,8 @@
             right: 0;
         }
 
-        h1 {
-            margin-left: 0;
-        }
-
         #aboutSection>h1 {
+            margin-left: 0;
             margin-top: 0;
         }
 
@@ -51,6 +48,22 @@
         .socialLink:active {
             background-color: #414141;
             color: #C9C49C;
+        }
+
+        @media only screen and (min-width: 1100px) {
+            #aboutContain {
+                flex-direction: row;
+            }
+
+            #aboutSection {
+            padding: 25px;
+            width: 60%;
+            height: 100%;
+        }
+
+            #aboutContain>img {
+                width: 40%;
+            }
         }
     </style>
 </head>
