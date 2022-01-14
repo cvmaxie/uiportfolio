@@ -136,7 +136,7 @@ img {
     display: none;
 }
 
-@media only screen and (min-width: 1400px) {
+@media only screen and (min-width: 1200px) {
     h1 {
         font-size: 1.2rem;
     }
@@ -144,7 +144,7 @@ img {
     #links>a {
         font-size: 1.2rem;
     }
-    #gridContainer div {
+    #gridContainer>div {
         flex-direction: row;
     }
     .homeImg {
