@@ -9,17 +9,17 @@
             display: flex;
             flex-direction: column;
         }
-
+        
         #aboutContain>img {
             width: 90%;
             object-fit: contain;
             margin: auto;
         }
-
+        
         #aboutSection {
-            padding: 25px;   
+            padding: 25px;
         }
-
+        
         #socials {
             width: fit-content;
             height: fit-content;
@@ -27,40 +27,38 @@
             bottom: 0;
             right: 0;
         }
-
+        
         #aboutSection>h1 {
             margin-left: 0;
             margin-top: 0;
         }
-
+        
         .emphasis {
             color: #ecebe5;
             font-weight: bold;
         }
-
+        
         .socialLink:link,
         .socialLink:visited {
             background-color: #2b2b2b;
             color: #C9C49C;
         }
-
+        
         .socialLink:hover,
         .socialLink:active {
             background-color: #414141;
             color: #C9C49C;
         }
-
+        
         @media only screen and (min-width: 1100px) {
             #aboutContain {
                 flex-direction: row;
             }
-
             #aboutSection {
-            padding: 25px;
-            width: 60%;
-            height: 100%;
-        }
-
+                padding: 25px;
+                width: 60%;
+                height: 100%;
+            }
             #aboutContain>img {
                 width: 40%;
             }
@@ -71,9 +69,7 @@
 <body>
     <div id="container">
         <div id="topbar">
-            <a href="index.html">
-                <h1>Max Seavey</h1>
-            </a>
+            <a id="title" href="index.html">Max Seavey</a>
             <div id="links"><a href="index.html">Portfolio</a><a href="about.html">About</a></div>
         </div>
         <div id="aboutContain" style="height:min-content;">
@@ -81,23 +77,14 @@
             <div id="aboutSection">
                 <h1>About</h1>
                 <p>
-                    Hello! I'm Max, a third year student at <span class="emphasis">New York University</span>, where I'm
-                    majoring in <span class="emphasis">Game Design</span>
-                    and minoring in <span class="emphasis">Web Applications</span>
-                    and <span class="emphasis">Computer Science</span>. I'm interested in designing the aesthetics of
-                    user interfaces for
-                    interactive digital media, including websites, games, and productivity applications.
+                    Hello! I'm Max, a third year student at <span class="emphasis">New York University</span>, where I'm majoring in <span class="emphasis">Game Design</span> and minoring in <span class="emphasis">Web Applications</span> and <span class="emphasis">Computer Science</span>.
+                    I'm interested in designing the aesthetics of user interfaces for interactive digital media, including websites, games, and productivity applications.
                 </p>
-                <p>Long before learning to code, I spent my time on illustration and writing. I believe that
-                    years of experience
-                    in visual art and storytelling served as my foundation for the artistic principles that inform my UI
-                    decisions. I'm
-                    hoping to explore UI in a professional context by producing functional UI/UX prototypes and
-                    implementations for larger projects.</p>
+                <p>Long before learning to code, I spent my time on illustration and writing. I believe that years of experience in visual art and storytelling served as my foundation for the artistic principles that inform my UI decisions. I'm hoping to
+                    explore UI in a professional context by producing functional UI/UX prototypes and implementations for larger projects.</p>
                 <p>Contact: ms12047@nyu.edu</p>
                 <div id="socials">
-                    <a class="button socialLink" target="_blank"
-                        href="https://www.linkedin.com/in/max-seavey-91b700183/">Linkedin</a>
+                    <a class="button socialLink" target="_blank" href="https://www.linkedin.com/in/max-seavey-91b700183/">Linkedin</a>
                     <a class="button socialLink" target="_blank" href="https://github.com/cvmaxie">GitHub</a>
                     <a class="button socialLink" target="_blank" href="https://crowswalk.itch.io/">itch.io</a>
                     <a class="button socialLink" target="_blank" href="seavey_max_resume.pdf">Resume</a>
