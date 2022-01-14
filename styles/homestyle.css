@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville&family=Noto+Serif:wght@400;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Display&display=swap');
-
 html {
     font-size: 100%;
 }
@@ -19,7 +18,7 @@ h3 {
 }
 
 h1 {
-    font-size: 1.6rem;
+    font-size: 2.8rem;
     margin: 0;
     padding: .3rem .75rem .3rem .75rem;
     padding-left: 0;
@@ -50,14 +49,16 @@ iframe {
     margin: auto;
 }
 
-#topbar>a, #links>a {
-    font-size: 1.2rem;
+#topbar>a,
+#links>a {
+    font-size: 2.8rem;
     text-decoration: none;
     border-radius: 4px;
     padding: .3rem .75rem .3rem .75rem;
 }
 
-.button:link, .button:visited {
+.button:link,
+.button:visited {
     font-size: 1.3rem;
     margin: .75rem .5rem .75rem 0;
     padding: .3rem .75rem .3rem .75rem;
@@ -67,7 +68,8 @@ iframe {
     text-decoration: none;
 }
 
-.button:hover, .button:active {
+.button:hover,
+.button:active {
     background-color: #ecebe5;
 }
 
@@ -98,7 +100,8 @@ img {
     padding: .8rem;
 }
 
-#links a:hover, links a:active {
+#links a:hover,
+#links a:active {
     background-color: #2b2b2b;
 }
 
@@ -133,33 +136,36 @@ img {
     display: none;
 }
 
-@media only screen and (min-width: 1100px) {
+@media only screen and (min-width: 1400px) {
+    h1 {
+        font-size: 1.2rem;
+    }
+    #topbar>a,
+    #links>a {
+        font-size: 1.2rem;
+    }
     #gridContainer div {
         flex-direction: row;
     }
-
     .homeImg {
         width: 500px;
     }
 }
 
-@media only screen and (min-width: 1300px) {
+@media only screen and (min-width: 1500px) {
     .homeImg {
         width: 580px;
     }
-
     #container {
         width: 80%;
     }
 }
 
-@media only screen and (min-width: 1800px) {
+@media only screen and (min-width: 1900px) {
     .homeImg {
         width: 680px;
     }
-
     #container {
         width: 70%;
     }
-
 }
