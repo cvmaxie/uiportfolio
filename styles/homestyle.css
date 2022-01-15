@@ -85,6 +85,7 @@ iframe {
     display: flex;
     padding: .6rem 0;
     background-color: #1d1d1d;
+    align-items: center;
 }
 
 
@@ -92,24 +93,27 @@ iframe {
 
 #links {
     display: flex;
-    margin: 0 0 auto auto;
+    margin: auto 0 auto auto;
     width: max-content;
 }
 
 
 /*a inside topbar, a inside link div inside dopbar*/
 
-#topbar>a,
-#links>a {
-    font-size: 1.4rem;
+#topbar a,
+#links a {
     text-decoration: none;
-    border-radius: 4px;
     padding: .3rem .75rem .3rem .75rem;
     margin: 0 1rem;
 }
 
 
 /*target links in link section, not title*/
+
+#links a {
+    font-size: 1.4rem;
+    border-radius: 4px;
+}
 
 #links a:hover,
 #links a:active {
@@ -120,6 +124,7 @@ iframe {
 /*name in top left*/
 
 #title {
+    font-size: 1.8rem;
     white-space: nowrap;
     padding-left: 0;
     font-family: 'Noto Serif', serif;
